@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One - Off Cash Assistance</title>
+</head>
+<body>
+        <div id="form1">
+            <form method="POST" action="assistance.html">
+                <table border="1" id="table" cellpadding="6" cellspacing="0">
+                    <tr>
+                        <td colspan="2" id="title">
+                            ONE - OFF CASH ASSISTANCE
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">CUSTOMER NAME</label></td>
+                        <td><input type="text" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>CATEGORY</label></td>
+                        <td>
+                            <label><input type="radio" id="B40" value="B40" required>B40</label>
+                            <label><input type="radio" id="T20" value="T20">T20</label>
+                            <label><input type="radio" id="M40" value="M40">M40</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>PARENT'S STATUS</label></td>
+                        <td>
+                            <label><input name="-" type="checkbox" id="nomother" value="No Mother">No Mother</label>
+                            <label><input name="-" type="checkbox" id="nofather" value="No Father">No Father</label>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2">
+                            <button type="button" onclick="calmessage()" id="calculate">CHECK STATUS</button> <input
+                                type="reset" value="RESET" id="reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div id="form2">
+            <form method="GET" action="assistance.html">
+                <table border="1" id="table" cellpadding="6" cellspacing="0">
+                    <tr>
+                        <td colspan="2" id="title">
+                            ONE - OFF CASH ASSISTANCE
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">CUSTOMER NAME</label></td>
+                        <td><div id="displayname"></div></td>
+                    </tr>
+                    <tr>
+                        <td><label>CATEGORY</label></td>
+                        <td>
+                            <div id="category"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>PARENT'S STATUS</label></td>
+                        <td>
+                            <div id="status">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>TOTAL ASSISTANCE</label></td>
+                        <td>
+                            <div id="total">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="BACK" id="back">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <script src="function.js"></script>
+</body>
+</html>
